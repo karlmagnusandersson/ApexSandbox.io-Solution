@@ -1,0 +1,17 @@
+public Integer maxConsecutiveOnes(Integer[] numbers) {
+    Integer maxConsecutiveNumber = 0;
+    Integer currentMax          = 0;
+
+    for (Integer currentNumber : numbers) {
+        if (currentNumber == 1) {
+            currentMax += 1;
+            if (currentMax > maxConsecutiveNumber) {
+                maxConsecutiveNumber = currentMax;
+            }
+        }
+        else {
+            currentMax = 0;
+        }
+    }
+    return maxConsecutiveNumber;
+}
