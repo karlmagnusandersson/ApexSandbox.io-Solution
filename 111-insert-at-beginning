@@ -1,9 +1,9 @@
 public void insertAtStart(String cityName, List<String> cities) {
+    // if the list is not empty, add the cityName to the first position of the list
     if (!cities.isEmpty()) {
         cities.add(0, cityName);
     }
     else {
         cities.add(cityName);
     }
-    //code here
 }
