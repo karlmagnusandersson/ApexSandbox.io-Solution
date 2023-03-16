@@ -4,4 +4,5 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
         passedProject && passedAssignments) {
             return true;
     }
+    return false;
 }
