@@ -1,0 +1,13 @@
+public String evenOrOdd(Integer num) {
+    String returnString;
+    Integer left = math.mod(math.abs(num), 2);
+
+    if (left == 0){
+        returnString = 'even';
+    }
+    else if (left == 1){
+        returnString = 'odd';
+    }
+
+    return returnString;
+}
