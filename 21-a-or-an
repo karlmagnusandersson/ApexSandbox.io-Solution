@@ -1,5 +1,5 @@
 public String aOrAn(String word) {
-    Set<String> vowels = new Set<String>{'Alaska', 'Arizona ','California','Arkansas' };
+    Set<String> vowels = new Set<String>{'a'};
 
     //code here
 }
