@@ -2,5 +2,7 @@ public Integer secondLargest(List<Integer> numbers) {
 
     numbers.sort();
 
-    return numbers[0];
+    Integer lastPosition = numbers.size() - 2;
+
+    return numbers[lastPosition];
 }
