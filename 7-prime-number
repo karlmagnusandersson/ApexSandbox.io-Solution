@@ -2,7 +2,7 @@ public Boolean isPrime(Integer num) {
     boolean prime = true;
     
     for (Integer i = 2; prime; i++){
-        if ((i < num)){
+        if (!(i < num)){
             break;
         }
 
