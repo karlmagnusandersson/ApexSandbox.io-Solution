@@ -1,0 +1,15 @@
+public Boolean isPrime(Integer num) {
+    boolean prime = true;
+    
+    for (Integer i = 2; prime; i++){
+        if ((i > num)){
+            break;
+        }
+
+        else if ((math.mod(num, i) == 0)){
+            prime = false;
+        }
+    }
+
+    return prime;
+}
