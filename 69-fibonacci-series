@@ -1,7 +1,4 @@
 public List<Integer> fibonacciSeries(Integer n) {
-    Integer first  = 1;
-    Integer second = 1;
-
     List<Integer> myList = new List<Integer>{1, 1};
 
     if (n == 1) {
