@@ -1,6 +1,6 @@
 public Boolean companionPlants(List<String> plants) {
     if (plants.isEmpty()) return true;
-    else if (plants.size()<2) return false;
+    else if (plants.size() < 2) return false;
 
     map<String,String> getCompanion = new map<String,String>{
             'onions'   => 'lettuce',
