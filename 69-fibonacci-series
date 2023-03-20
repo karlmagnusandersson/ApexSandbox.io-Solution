@@ -10,7 +10,7 @@ public List<Integer> fibonacciSeries(Integer n) {
 
     if (n > 2) {
         for (Integer i = 2; i < n; i++) {
-            myList.add(myList[i] + myList[i-1]);
+            myList.add(myList[i-2] + myList[i-1]);
         }
     }
 
