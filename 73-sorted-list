@@ -1,0 +1,16 @@
+public boolean isSorted(List<Integer> numbers) {
+    boolean ascSort  = true;
+    boolean descSort = true;
+
+    // check if the list is sorted in ascending or descending order
+    for (Integer i = 1; i < numbers.size(); i++) {
+        if (numbers[i] > numbers[i-1]) {
+            descSort = false;
+        }
+        else if (numbers[i] < numbers[i-1]) {
+            ascSort = false;
+        }
+    }
+
+    return ascSort || descSort;
+}
