@@ -8,11 +8,7 @@ public List<Integer> fibonacciSeries(Integer n) {
         return new List<Integer> {1};
     }
 
-
     if (n > 2) {
-        myList.add(first);  
-        myList.add(second);
-
         for (Integer i = 2; i < n; i++) {
             Integer third = first + second;
             mylist.add(third);
