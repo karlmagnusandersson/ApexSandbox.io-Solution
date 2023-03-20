@@ -1,0 +1,15 @@
+public String reverseWordsInASentence(String sentence){
+    if (sentence == null) {
+        return null;
+    }
+    
+    List<string> myList = sentence.split(' ');
+    List<string> revesedList = new List<String>();
+
+    for (Integer i = myList.size() - 1; i > -1; i--) {
+        revesedList.add(myList[i]);
+    }
+    
+    String returnString = string.join(revesedList,' ');
+    return returnString;
+}
