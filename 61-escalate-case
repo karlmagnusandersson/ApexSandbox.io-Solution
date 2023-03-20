@@ -1,0 +1,9 @@
+public void escalateIfMeetsCriteria(Case c) {
+    Boolean cond1 = (c.Type == 'Mechanical' || c.Type == 'Electrical');
+    Boolean cond2 = c.Reason == 'Breakdown';
+    Boolean cond3 = c.Status == 'In Progress';
+
+    if (cond1 && cond2 && cond3) {
+        c.IsEscalated = true;
+    }
+}
