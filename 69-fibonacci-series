@@ -2,7 +2,19 @@ public List<Integer> fibonacciSeries(Integer n) {
     Integer first  = 1;
     Integer second = 1;
 
-    List<Integer> myList = new List<Integer>{first, second};
+    List<Integer> myList = new List<Integer>();
+
+
+    if (n == 1) {
+        myList.add(first);
+        return myList;
+    }
+
+    if (n == 2) {
+        myList.add(first);
+        myList.add(second);
+        return myList;
+    }
 
     for (Integer i = 0; i < n; i++) {
         Integer third = first + second;
