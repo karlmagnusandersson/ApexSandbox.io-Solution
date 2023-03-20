@@ -2,19 +2,13 @@ public List<Integer> fibonacciSeries(Integer n) {
     Integer first  = 1;
     Integer second = 1;
 
-    List<Integer> myList = new List<Integer>();
-
+    List<Integer> myList = new List<Integer>{1, 1};
 
     if (n == 1) {
         myList.add(first);
         return myList;
     }
 
-    if (n == 2) {
-        myList.add(first);
-        myList.add(second);
-        return myList;
-    }
 
     if (n > 2) {
         myList.add(first);  
