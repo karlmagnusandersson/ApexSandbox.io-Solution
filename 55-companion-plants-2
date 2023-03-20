@@ -1,0 +1,21 @@
+public Boolean companionPlants(List<String> plants) {
+    if(plants.isEmpty()) return true;
+    else if(plants.size()<2) return false;
+
+    map<String,String> getCompanion = new map<String,String>{
+            'onions'   => 'lettuce',
+            'onions'   => 'carrots',
+            'onions'   => 'tomatoes',
+            'lettuce'  => 'cucumbers',
+            'lettuce'  => 'onions',
+            'cucumbers'=> 'lettuce',
+            'carrots'  => 'onions',
+            'tomatoes' => 'onions'};
+
+    for (Integer i=0;i<plants.size()-1;i++) {
+        if (getCompanion.get(plants[i])!=plants[i+1]) {
+            return false;
+        }
+    }
+    return True;
+}
