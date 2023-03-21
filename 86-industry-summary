@@ -9,7 +9,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             Decimal currentSum = returnMap.get(a.name);
             Decmual updatedSum = currentSum + a.AnnualRevenue;
 
-            returnMap.put(a.Name, updatedSum):
+            returnMap.put(a.Name, updatedSum);
         }
     }
 
