@@ -2,14 +2,14 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Map<String, Decimal> returnMap = new Map<String, Decimal>();
 
     for (Account a : accounts) {
-        if (!returnMap.containsKey(a.Name)) {
-            returnMap.put(a.name, a.AnnualRevenue);
+        if (!returnMap.containsKey(a.Industry)) {
+            returnMap.put(a.Industry, a.AnnualRevenue);
         }
         else {
             Decimal currentSum = returnMap.get(a.name);
             Decimal updatedSum = currentSum + a.AnnualRevenue;
 
-            returnMap.put(a.Name, updatedSum);
+            returnMap.put(a.Industry, updatedSum);
         }
     }
 
