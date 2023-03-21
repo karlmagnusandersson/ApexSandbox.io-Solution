@@ -5,7 +5,9 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
         if (!String.isBlank(c.Type)) {
             if (!returnMap.containsKey(c.Type)) {
                 //List<Case> caseList = new List<Case>{c};
-                returnMap.put(c.Type, new List<Case> {c});
+                //returnMap.put(c.Type, new List<Case> {c});
+                returnMap.put(c.Type, new List<Case> { c });
+
             }
             else {
                 List<Case> caseList2 = returnMap.get(c.Type);
