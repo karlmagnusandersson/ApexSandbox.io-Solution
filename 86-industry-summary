@@ -6,7 +6,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
             returnMap.put(a.name, a.AnnualRevenue);
         }
         else {
-            returnMap.get(a.Name).AnnualRevenue += a.AnnualRevenue;
+            returnMap.get(a.Name).AnnualRevenue = 100;
         }
     }
 
