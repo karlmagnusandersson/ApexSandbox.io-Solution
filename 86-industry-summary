@@ -1,3 +1,9 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
-    //code here
+    Map<String, Decimal> returnMap = new Map<String, Decimal>();
+
+    for (String s : industrySummary.keyset()) {
+        System.debug('hello');
+    }
+
+
 }
