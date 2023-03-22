@@ -5,7 +5,8 @@ public String registerStudent(String name, String phone, String email) {
     studentForInsert.apxio__Email__c = email;
 
     insert studentForInsert;
-    return studentForInsert.apxio__Registration_Number__c;
+    apxio__Student__c recordAfterInsert = [SELECT apxio__Student__c WHERE id = :studentForInsert.id];
+    return recordAfterInsert.apxio__Registration_Number__c;
 
     // code here
 }
