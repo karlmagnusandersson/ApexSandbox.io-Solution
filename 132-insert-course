@@ -4,9 +4,6 @@ public Id insertCourse(String name, String details, Integer credits) {
     if (!(credits == 1 || credits == 2 || credits == 3 || credits == 4)) {
         return null;
     }
-    else {
-        courseForInsert.apxio__Credits__c = credits;
-    }
 
     insert courseForInsert;
     return courseForInsert.id;
