@@ -8,5 +8,4 @@ public Id insertCourse(String name, String details, Integer credits) {
 
     insert courseForInsert;
     return courseForInsert.id;
-    // code here
 }
