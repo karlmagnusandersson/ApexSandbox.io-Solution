@@ -2,7 +2,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     apxio__Course__c courseForInsert = new apxio__Course__c(Name = name, apxio__Course_Details__c = details);
 
     if (!(credits == 1 || credits == 2 || credits == 3 || credits == 4)) {
-        courseForInsert.apxio__Credits__c = credits;
+        courseForInsert.apxio__Credits__c = integer(credits);
     }
     else {
         courseForInsert.apxio__Credits__c = null;
