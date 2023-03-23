@@ -10,7 +10,7 @@ public void createCourseAndClass(String name, String description) {
 
     myClass.apxio__Description__c = truncatedDescription;
 
-    insert truncatedDescription;
+    insert myClass;
 
 
 
