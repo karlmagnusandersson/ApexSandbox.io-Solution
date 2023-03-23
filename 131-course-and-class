@@ -8,11 +8,10 @@ public void createCourseAndClass(String name, String description) {
 
     if (!String.isBlank(description) {
         String truncatedDescription = description.left(255);
-
-    myClass.apxio__Description__c = truncatedDescription;
+         myClass.apxio__Description__c = truncatedDescription;
 
         
-    })
+    }
     
     insert myClass;
 
