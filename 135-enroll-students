@@ -18,6 +18,5 @@ public void enrollStudents(List<String> emails, String className) {
         enrollmentList.add(currentEnrollment);
     }
 
-
     insert enrollmentList;
 }
