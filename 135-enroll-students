@@ -15,7 +15,9 @@ public void enrollStudents(List<String> emails, String className) {
         apxio__Class_Enrollment__c currentEnrollment = new apxio__Class_Enrollment__c();
         currentEnrollment.apxio__Student__c = s.Id;
         currentEnrollment.apxio__Offered_Class__c = classes[0].Id;
+        enrollmentList.add(currentEnrollment);
     }
+
 
     insert enrollmentList;
 }
