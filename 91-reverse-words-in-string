@@ -1,0 +1,14 @@
+public static String reverseWords(String str){
+    // split string into list of strings
+    List<String> strings = str.split(' ');
+    // for each string in the list, reverse the order of letters
+    for (String s : strings) {
+        s = s.reverse();
+        }
+    }
+    String returnstring = String.join(
+strings, ' ');
+return returnstring;
+
+
+}
