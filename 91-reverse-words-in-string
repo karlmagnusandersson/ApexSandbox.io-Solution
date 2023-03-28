@@ -4,10 +4,9 @@ public static String reverseWords(String str){
     // for each string in the list, reverse the order of letters
     for (String s : strings) {
         s = s.reverse();
-        }
+        
     }
-    String returnstring = String.join(
-strings, ' ');
+    String returnstring = String.join(strings, ' ');
 return returnstring;
 
 
