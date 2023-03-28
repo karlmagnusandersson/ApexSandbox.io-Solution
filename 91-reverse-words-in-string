@@ -3,8 +3,7 @@ public static String reverseWords(String str){
     List<String> strings = str.split(' ');
     // for each string in the list, reverse the order of letters
     for (String s : strings) {
-        s = s.reverse();
-        
+        s = 'apa'
     }
     String returnstring = String.join(strings, ' ');
 return returnstring;
